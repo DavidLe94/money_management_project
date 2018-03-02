@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.androidlayout_asigment.CaiDatActivity" >
+
+    <Spinner
+        android:id="@+id/spPhanNhom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lvPhannhom" />
+
+    <ListView
+        android:id="@+id/lvPhannhom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ibtnThemkhoan"
+        android:layout_below="@+id/spPhanNhom" 
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#FFFFFF">
+
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/ibtnThemkhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lvPhannhom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lvPhannhom"
+        android:src="@android:drawable/ic_input_add" 
+        android:background="#70db70"/>
+
+</RelativeLayout>

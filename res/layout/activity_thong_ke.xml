@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.androidlayout_asigment.ThongKeActivity" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        
+        <Spinner
+	        android:id="@+id/spinnerThongKe"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#CCCCCC"
+	        android:padding="5dp"/>
+		
+	    <LinearLayout 
+	        android:id="@+id/layout1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:background="#FFFFFF"
+	        android:layout_marginTop="5dp">
+	        
+	        <TextView 
+	        android:id="@+id/tv1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tongthu"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		   
+	        <ListView
+	            android:id="@+id/lvThu"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+	            android:paddingTop="10dp"
+	            android:paddingLeft="10dp">
+	            
+	        </ListView>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/layout2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:layout_marginTop="10dp"
+	        android:background="#FFFFFF">
+	        <TextView 
+	        android:id="@+id/tv2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/tongchi"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+	        
+	        <ListView
+	            android:id="@+id/lvChi"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="10dp" 
+	            android:paddingLeft="10dp">
+	        </ListView>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

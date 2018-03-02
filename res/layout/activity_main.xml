@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout 
+	    	    android:id="@+id/tabThuchi"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="fill_parent">
+		    	<include layout="@layout/activity_thu_chi"/>
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout 
+		    	    android:id="@+id/tabThongke"
+		    	    android:layout_width="fill_parent"
+		    	    android:layout_height="fill_parent">
+		    	<include layout="@layout/activity_thong_ke"/>
+		    	</LinearLayout>
+		    	
+		    	<LinearLayout 
+		    	    android:id="@+id/tabCaidat"
+		    	    android:layout_width="fill_parent"
+		    	    android:layout_height="fill_parent">
+		    	<include layout="@layout/activity_cai_dat"/>
+		    	</LinearLayout>
+		    	
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
